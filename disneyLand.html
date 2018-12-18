@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DisneyLand</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link href="common.css" rel="stylesheet" type="text/css">
+<style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+    body{
+        font-family: 'Nanum Pen Script', serif;
+        text-align: center;
+
+    }
+    h1{
+        font-size: 3em;
+        margin-top:1%;
+    }
+    div{
+        font-size:2em;
+    }
+    div ~ div{
+        margin-top: 3%;
+    }
+
+</style>
+
+</head>
+
+<body>
+<h1><img src ="mickey.png" class="mickey" alt="MickyMouse">디즈니 랜드를 소개합니다.<img src ="mickey.png" class="mickey" alt="MickyMouse"></h1>
+<div>
+    전세계에 있는 디즈니 랜드 중 처음으로 만들어진 캘리포니아 디즈니 랜드에 대해 살펴보자.<br>
+    월트 디즈니 컴퍼니의 자회사인 월트 디즈니 파크 앤 리조트가 운영하는 미국 캘리포니아 주 오렌지 군 애너하임에 위치한 테마파크이다.
+    <img src="disney_land_map.png" width="100%" alt="DisneyLand Map">
+</div>
+
+<div>
+    <p>디즈니 랜드의 정문은 디즈니 영화 오프닝에서 등장하는 성과 유사하다.</p>
+    <img src="disney_land_main.png"  width="70%" alt="DisneyLand" ondblclick="displayDate()"><br>
+    <p>Disneyland Park Hours : 9:00 AM to 10:00 PM</p>
+    <span id="now"></span><span id="time"></span><span id="so"></span>
+    <span id ="isOpen"></span>
+</div>
+
+<div>
+    54개의 어트랙션(놀이기구) 와 17개의 공연을 제공한다.<br>
+    <img src="attraction.jpg" width="25%" alt="attractions">
+    <img src="entertainment.jpg" width="25%" alt="entertainments">
+</div>
+
+<div>
+    더욱 자세한 내용은 디즈니랜드 홈페이지를 참고바란다.<br>
+    <img src ="mickey.png" class="mickey" alt="MickyMouse"><a href="https://disneyland.disney.go.com/" style="text-decoration:none;" target="_blank">디즈니랜드로 가기</a><img src ="mickey.png" class="mickey" alt="MickyMouse">
+
+</div>
+<script type="text/javascript" src="disney.js"></script>
+</body>
+</html>

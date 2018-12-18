@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        h1{
+            text-align: center;
+            font-size: 4em;
+            font-family:'Nanum Pen Script', serif;
+        }
+        img{
+            width: 25em;
+            height: 35em;
+
+        }
+        div{
+            text-align: center;
+        }
+        button{
+            position:absolute;
+            top:1em;
+            left:1em;
+        }
+
+    </style>
+</head>
+
+<body>
+<button onclick="color_background();"> 스크린 색상 선택</button>
+
+<h1>보고 싶은 영화를 선택해 주세요.</h1>
+
+
+<div>
+    <a href="rapunzel.html" id = "movie1"><img src="rapunzel_poster.jpg" alt="rapunzel 포스터" ></a>
+    <a href="Frozen.html" id = "movie2" ><img src="frozen_poster.jpg" alt="frozen 포스터" ></a>
+    <a href="Zootopia.html" id="movie3"><img src="zootopia_poster.jpg" alt="zootopia 포스터"></a>
+</div>
+
+
+<script type="text/javascript" src="select_movie.js"></script>
+
+</body>
+</html>

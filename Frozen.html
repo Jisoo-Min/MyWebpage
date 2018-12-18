@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frozen</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+        #fixed{
+            position: fixed;
+            bottom: 1px;
+            right:1px;
+        }
+        body{
+            text-align: center;
+            font-family:'Nanum Pen Script', serif;
+        }
+        h1{
+            font-size: 4em;
+            margin-top: 2em;
+        }
+        h2{
+            font-size: 3em;
+            margin-top: 2em;
+        }
+        blockquote, span, p, a, li{
+            font-size: 2em;
+            font-family:'Nanum Pen Script', serif;
+        }
+        #melon:hover{
+            background-color: greenyellow;
+        }
+        #youtube:hover{
+            background-color: orangered;
+        }
+        h1+h2{
+            margin-top:1em;
+        }
+        *{
+            margin: 0;
+            padding :0;
+        }
+        img{
+            border:none;
+            vertical-align : top;
+            width :2.5em;
+            height : 3em;
+        }
+        #bannerWrap{
+            width : 60em;
+            padding: 1em 2em;
+            margin : 0 auto;
+            border : 1px solid black;
+        }
+        #banner{
+            width:200em;
+        }
+        #frame{
+            width: 50em;
+            height : 12em;
+            overflow: hidden;
+            position:relative;
+            margin:10px auto;
+        }
+
+        .charLi{
+            list-style:none;
+            float:left;
+            width:9em;
+
+        }
+        .roll{
+            width:1em;
+            height:auto;
+        }
+    </style>
+
+</head>
+
+
+<body id="bg">
+
+<img src='fixed_elsa.png' style="width:25em; height:20em;" id="fixed">
+
+<h1 style="margin-top:1em">줄거리</h1>
+<blockquote>
+    서로가 최고의 친구였던 자매 <strong><span style="color: blue; font-size: 1em;">엘사</span></strong>와 <strong><span style="color: blue; font-size: 1em">안나</span></strong>.<br>
+    하지만 언니 ‘엘사’에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다. 모든 것을 얼려버리는 신비로운 힘이 바로 그것. <br>
+    엘사는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고, 얼어버린 왕국의 저주를 풀기 위해 안나는 언니를 찾아 환상적인 여정을 떠난다.<br>
+    (출처: 네이버 영화)
+</blockquote>
+
+<h1>등장인물</h1>
+
+
+<div id="bannerWrap">
+    <div id = "frame">
+        <ul id = "banner">
+            <li class="charLi"><a href="#"><img src="elsa.png" alt="Elsa" ></a></li>
+            <li class="charLi"><a href="#"><img src="anna.png" alt="Anna" ></a></li>
+            <li class="charLi"><a href="#"><img src="kristoff.png" alt="Kristoff" ></a></li>
+            <li class="charLi"><a href="#"><img src="olaf.png" alt="Olaf" ></a></li>
+            <li class="charLi"><a href="#"><img src="hans.jpg" alt="Hans" ></a></li>
+        </ul>
+    </div>
+    <p>
+        <a href = "#" class = "prev">
+            <img src="left.jpg" class="roll">
+        </a>
+        <a href = "#" class = "next">
+            <img src = "right.jpg" class="roll">
+        </a>
+    </p>
+</div>
+
+<br>
+
+
+<h1>영화 정보</h1>
+<p>감독: Chris Buc, Jennifer Michelle Lee</p>
+<p>국내 관객수 10,296,101명<span style="color:cornflowerblue; font-size: 1em;">(국내 상영 애니매이션 역대 1위)</span></p>
+<p>2013년도 10억달러 돌파 영화 $1,276,480,335</p>
+<p>2013년도 전 세계 박스오피스 1위</p>
+<p>제작비 1억 5천만 달러</p>
+<p>개봉 날짜(우리나라 기준): 2014. 1. 16</p>
+<p>상영시간 101분</p>
+
+<h1>관람포인트</h1>
+
+<h2>OST</h2>
+<ul style="list-style-type:none">
+    <li>Let It GO <span style="color:cornflowerblue; font-size:1em">(title)</span></li>
+    <li> Do You Want To Build A Snowman</li>
+    <li> Love Is An Open Door</li>
+</ul>
+<a href="http://www.melon.com/album/detail.htm?albumId=2225293"  id="melon" target="_blank">멜론으로 감상하기</a><br>
+<a href="https://www.youtube.com/watch?v=jQJTt-Upjnc&list=PLSGzBb-WehTzDOWpOf0r6k6mjgji1__uw&index=2" id="youtube" target="_blank">유튜브로 보러가기</a>
+
+
+<h2>하이라이트 영상</h2>
+<p>첫번째 영상은 엘사가 처음으로 마법을 자유롭게 쓰는 장면이다. 두번째 영상은 하이라이트는 아니지만 이 영화의 매력덩어리인 캐릭터 올라프를 보여준다.</p>
+<img src="elsa_charming.gif" alt="Else_scene" style="width: 33em; height:21em">
+<img src="olaf_charming.gif" alt="Olaf_scene" style="width: 33em; height:21em">
+
+<h2>히든 미키</h2>
+<p>디즈니에서 제작한 애니매이션에서 일부 장면에는 <strong><span style="color: red; font-size:1em">미키마우스</span></strong>가 숨어있는 것을 알 수 있는데, 겨울왕국에서도 이 히든 미키를 발견할 수 있다.</p>
+<p>미키마우스를 찾는 재미를 위하여 미키마우스가 나타나는 장면은 보여주지 않겠다.</p>
+<p>또한, 겨울왕국에는 디즈니의 애니매이션인 <strong><span style="color: orange; font-size:1em">라푼젤</span></strong>도 등장하는데 라푼젤도 함께 찾아보기를 바란다.</p>
+<script type="text/javascript" src="frozen.js"></script>
+</body>
+</html>

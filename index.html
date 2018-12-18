@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Jisoo's Web-Page</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+        li{
+            width: 12em;
+            display: inline-block;
+            text-align: center;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        li a:hover{
+            text-decoration: underline;
+        }
+        .title{
+            font-size: 3.5em;
+            background-image: url('hover_icon_before.png');
+            background-position: center center;
+            background-size: 90% 100%;
+            background-repeat: no-repeat;
+        }
+        .title:hover {
+            background-image: url('hover_icon.png');
+            background-position: center center;
+            background-size: 90% 100%;
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+        .home{
+            background-image: url('main.jpg');
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            background-size: 100% 100%;
+            height: 38em;
+            display: table;
+            width: 100%;
+            border: 4px solid #7f13ff;
+        }
+        .home-contents{
+            color: white;
+            font-size: 2.2em;
+            text-align: right;
+            padding-right: 1.2em;
+            padding-top: 17%;
+            vertical-align: bottom;
+            display: table-cell;
+        }
+        p{
+            margin: 0.1em;
+        }
+        p::first-letter{
+            text-transform: uppercase;
+        }
+
+        th, td{
+            width: 10em;
+            font-size: 2em;
+            text-align: center;
+
+
+        }
+        tr:hover:nth-child(even){
+            background-color: red;
+        }
+        tr:hover:nth-child(odd){
+            background-color: yellow;
+        }
+        strong{
+            color: red;
+        }
+        h1{
+            margin-top:2em;
+        }
+        #fixed{
+            position:absolute;
+            right : 0;
+            top:0;
+            font-size : 2em;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="fixed" onclick="join()">JOIN</div>
+    <div>
+        <nav style="width: 77em; height: 5em; margin: 1em auto; ">
+            <ul style="padding:0">
+                <li><a href="#history">History</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li style="width: 400px;"><a href="index.html"  class="title">Jisoo X DISNEY</a></li>
+                <li onclick="click_info()"><a> information </a></li>
+                <li ><a href="disneyLand.html" >Disney Land</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class = "home">
+        <span class = "home-contents">
+            <p id="introduce1" hidden="hidden">this is my web page.</p>
+            <p id="introduce2" hidden="hidden">it is to share my favorite animation.</p>
+            <p id="introduce3" hidden="hidden">all animations I introduced made by Disney.</p>
+            <p id="introduce4" hidden="hidden">every scenes in the movies is detailed and colorful</p>
+            <p id="introduce5" hidden="hidden">in each pages, i wrote charming points which we can find out in the movie</p>
+        </span>
+    </div>
+
+
+<div style="margin-left:1em">
+    <h1 id="history" ><img src ="mickey.png" class="mickey" alt="MickyMouse">About Disney Company<img src ="mickey.png" class="mickey" alt="MickyMouse"></h1>
+
+    <div style="height: 21em;">
+
+        <div style = " display:inline-block">
+            <img src="waltdisney.jpg" style="width: 16em; height:21em"  alt="Walt-Disney" id="founder">
+        </div>
+
+
+        <table style="display: inline-block; margin-bottom: 4em">
+            <tr>
+                <th> year of foundation</th>
+                <td>1923-10-26</td>
+            </tr>
+
+            <tr>
+                <th>nation</th>
+                <td>USA</td>
+            </tr>
+
+            <tr id="showFounder">
+                <th> founder</th>
+                <td >Walter Elias Disney </td>
+            </tr>
+
+            <tr>
+                <th>current CEO</th>
+                <td>Robert Iger</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <h1 id="history_head"><img src ="mickey.png" class="mickey" alt="MickyMouse" >History Of Disney Animation<img src ="mickey.png" class="mickey" alt="MickyMouse"></h1>
+    <img src="history_bar.png" style="width: 80%; heigth:auto"  alt="history-bar입니다." usemap="#history_bar" id ="history_img">
+    <map name="history_bar">
+        <area shape="circle" coords="1155,143,40" alt="rapunzel" href="rapunzel.html" target="_blank" >
+        <area shape="circle" coords="1290,143,40" alt="frozen" href="Zootopia.html" target="_blank" >
+        <area shape="circle" coords="1430,143,40" alt="zootopia" href="Frozen.html" target="_blank" >
+    </map>
+
+
+
+
+    <h1><img src ="mickey.png" class="mickey" alt="MickyMouse" >Main Character Of Disney<img src ="mickey.png" class="mickey" alt="MickyMouse"></h1>
+         <div style="font-family: 'Nanum Pen Script', cursive; font-size: 2em; display: inline;">
+             <p style="text-indent: 1em"><strong>미키마우스</strong>는 1929년 11월 18일에 태어난  Walt Disney Company의 마스코트 캐릭터이다.</p>
+             <p>디즈니의 작품들에는 미키의 얼굴모양이 그려진 곳이 있는데, 영화를 즐기면서 이 '히든 미키'를 찾는 재미도 누릴 수 있다.</p>
+             <p>아래 영상은 미키마우스가 등장하는 짧은 애니매이션이다.</p>
+         </div>
+        <div>
+            <button id="show">동영상 보기</button>
+            <button id="hide">동영상 숨기기</button>
+         </div>
+        <div>
+            <video width="640" height="480" controls style="display:inline-block" id="MickyVideo">
+                <source src="classic.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+</div>
+    <script type="text/javascript" src="click_information.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

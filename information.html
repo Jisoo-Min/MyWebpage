@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <link href="common.css" rel="stylesheet" type="text/css">
+
+<style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+    #information_title{
+        font-family: 'Nanum Pen Script', serif;
+        font-size: 4em;
+        margin-top:1em;
+    }
+    form{
+        font-family: 'Nanum Pen Script', serif;
+        font-size: 3em;
+
+    }
+    h1{
+        margin-top: 1%;
+    }
+    #back{
+        font-family: 'Nanum Pen Script', serif;
+        font-size : 2em;
+    }
+    .nearInput
+    {
+        font-size: 20px;
+    }
+
+</style>
+</head>
+
+
+<body>
+<a href="index.html"><img src="goback.jpg" alt="go_back" style="width: 3em; height:3em"><span id="back">뒤로가기</span></a>
+<h1 id="information_title"><img src ="mickey.png" class="mickey" alt="MickyMouse" >궁금하신 점이 있으시면 알려주세요.</h1>
+<form>
+    이름: <input type="text" name="name" required autocomplete><span class="nearInput" hidden="hidden">이름을 알려주세요</span><br>
+    연락처: <input type="tel" name="tel" maxlength="11"><span class="nearInput" hidden="hidden">연락처를 알려주세요</span><br>
+    이메일 : <input type="email" name="email" placeholder="답변을 받으실 이메일 주소를 입력해 주세요." required><span style="color:orange">이메일 수신 동의</span> <input type = "checkbox"><br>
+    성별: 남<input type = "radio" name = "gender"> 여<input type = "radio" name = "gender"><br>
+    질문하실 내용 : <input type="text" maxlength="1000" size="100"><br>
+    첨부파일: <input type="file" name="file"><br>
+    <button type = "submit" onclick="submitted()"> 등록하기 </button>
+    <button type = "reset"> 다시작성 </button>
+    <br><br><br>
+</form>
+<script type="text/javascript" src="info.js"></script>
+</body>
+</html>

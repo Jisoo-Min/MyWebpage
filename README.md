@@ -1,2 +1,1 @@
-# MyWebpage
-it is my web-page using html, css, and javascript
+# kmu-cs-web-client-2017-01-project-1
